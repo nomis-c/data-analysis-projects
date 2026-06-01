@@ -175,15 +175,16 @@ Sleep duration varies across the week, peaking on Wednesday and dropping to its 
 ### Calories
 
 Regarding caloric expenditure, the mean is 2,398 kcal/day with a median of 2,220 kcal/day, which are plausible values for total daily energy expenditure tracked by a fitness device. It is worth noting that the minimum value of 257 kcal likely reflects days where the device was not worn for the full day rather than actual low expenditure, as BMR alone would typically exceed this value. Caloric expenditure is highest on Tuesday and lowest on Monday, mirroring the step count pattern.
-![Calories burned by activity data](images/Total_calories_burned_by_activity_date.png)
 
-![Calories burned by total steps](images/Calories_burned_by_total_steps.png)
+![Calories burned by activity date](images/Total_calories_burned_by_activity_date.png)
 
 While a positive relationship between steps and calories burned is visible, the wide spread of data points suggests that individual factors such as body weight and activity intensity play a significant additional role.
 
-![Calories burned by activity level](images/Calories_burned_by_activity_level.png)
+![Calories burned by total steps](images/Calories_burned_by_total_steps.png)
 
 Of all activity categories, very active minutes show the steepest positive relationship with calories burned, indicating that intensity matters more than duration for energy expenditure.
+
+![Calories burned by activity level](images/Calories_burned_by_activity_level.png)
 
 ### Steps & Activity Levels
 
