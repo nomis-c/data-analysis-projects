@@ -28,13 +28,13 @@ For preprocessing I chose RStudio.
 install.packages("tidyverse") 
 library(tidyverse)
 ```
-**Manually import .csv dataset and assign to variable**
+** import .csv dataset and assign to variable**
 ```
-daily_activity = dailyActivity_merged
-daily_calory = dailyCalories_merged
-daily_intensities = dailyIntensities_merged
-daily_steps = dailySteps_merged
-daily_sleep = sleepDay_merged
+daily_activity    <- read.csv("dailyActivity_merged.csv")
+daily_calory      <- read.csv("dailyCalories_merged.csv")
+daily_intensities <- read.csv("dailyIntensities_merged.csv")
+daily_steps       <- read.csv("dailySteps_merged.csv")
+daily_sleep       <- read.csv("sleepDay_merged.csv")
 ```
 **Checking number of IDs (customers)**
 ```
@@ -150,7 +150,7 @@ summary(merged_df$TotalMinutesAsleep)
 
 **Exporting dataset for visualization with Tableau**
 ```
-write.csv(merged_df, "C:/Users/Money/OneDrive/Desktop/fitbit_cleaned.csv", row.names=FALSE)
+write.csv(merged_df, "fitbit_cleaned.csv", row.names=FALSE)
 ```
 
 
@@ -175,6 +175,7 @@ Sleep duration varies across the week, peaking on Wednesday and dropping to its 
 ### Calories
 
 Regarding caloric expenditure, the mean is 2,398 kcal/day with a median of 2,220 kcal/day, which are plausible values for total daily energy expenditure tracked by a fitness device. It is worth noting that the minimum value of 257 kcal likely reflects days where the device was not worn for the full day rather than actual low expenditure, as BMR alone would typically exceed this value. Caloric expenditure is highest on Tuesday and lowest on Monday, mirroring the step count pattern.
+![Calories burned by activity data](images/Total_calories_burned_by_activity_date.png)
 
 ![Calories burned by total steps](images/Calories_burned_by_total_steps.png)
 
